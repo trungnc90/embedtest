@@ -1,0 +1,10 @@
+Linux Application Layer Test
+Create two threads that share a 64 byte data buffer
+Thread one should create random characters with a random number of characters (1- 50 characters
+created at a time) and append them to the data buffer. If the number of characters to insert is
+larger than the available buffer size, the thread should wait for enough space to be available, not drop the data.
+The second thread should consume/remove a random number of characters (from 0 characters to
+the number of available characters) and print them to any disk log file.
+To make this test easier, we would suggest implementing on a PC edition of Linux, not an embedded environment.
+The application should be written in language C and can be built by GCC.
+
